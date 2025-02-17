@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+import { hostname } from 'os';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      { hostname: 'dummy-products-image.s3.eu-north-1.amazonaws.com' },
+    ],
+  },
 };
 
 export default nextConfig;
