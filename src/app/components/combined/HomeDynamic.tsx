@@ -1,11 +1,7 @@
 'use client';
-import Carousel from '../complex/Carousel';
 import { ProductData } from '@/app/types/types';
-import ProductCard from '../cards/ProductCard';
-import { useSlideIn } from '@/app/hooks/animations/useSlideIn';
 import { useRef } from 'react';
 import ApisAndText from './ApisAndText';
-import { useParallax } from '@/app/hooks/animations/useParallax';
 import StartScreen from '../basic/StartScreen';
 import { useFadeOut } from '@/app/hooks/animations/useFadeOut';
 

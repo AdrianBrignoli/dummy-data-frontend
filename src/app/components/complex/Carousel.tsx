@@ -3,7 +3,6 @@ import { CarouselProps } from '@/app/types/types';
 import { useState } from 'react';
 import React from 'react';
 import { BsArrowRight, BsArrowLeft } from 'react-icons/bs';
-import Image from 'next/image';
 
 export default function Carousel({ children }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0);

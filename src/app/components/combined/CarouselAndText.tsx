@@ -3,7 +3,6 @@ import ProductCard from '../cards/ProductCard';
 import { ProductData } from '@/app/types/types';
 import { useRef } from 'react';
 import { useSlideIn } from '@/app/hooks/animations/useSlideIn';
-import { useParallax } from '@/app/hooks/animations/useParallax';
 import { useFadeOut } from '@/app/hooks/animations/useFadeOut';
 
 export default function CarouselAndText({
