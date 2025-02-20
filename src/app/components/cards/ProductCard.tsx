@@ -10,6 +10,10 @@ export default function ProductCard({ props: props }: { props: ProductData }) {
           height={500}
           width={500}
           alt={props.name}
+          loading="lazy"
+          className="object-cover w-full h-full"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..."
         />
       </div>
       <div className="flex-[2] flex flex-col justify-between p-4 text-sm">

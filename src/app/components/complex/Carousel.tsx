@@ -14,8 +14,15 @@ export default function Carousel({ children }: CarouselProps) {
       <div>{childrenArray[currentIndex]}</div>
       <div className="flex justify-evenly flex-1 my-4">
         <div
-          className="rounded-full border border-gray-500 p-4 hover:border-gray-200 my-auto"
+          role="button"
+          aria-label="Previous slide"
+          tabIndex={0}
+          className="rounded-full border border-gray-500 p-4 hover:border-gray-200 my-auto cursor-pointer"
           onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
+          onKeyDown={(e) =>
+            e.key === 'Enter' &&
+            setCurrentIndex((prev) => Math.max(0, prev - 1))
+          }
         >
           <BsArrowLeft />
         </div>

@@ -5,11 +5,13 @@ import HomeDynamic from './components/combined/HomeDynamic';
 export default function Home() {
   const productData = use(fetchDummyData());
 
-  if (!productData) return;
+  if (!productData) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
 
-  return (
-    <>
-      <HomeDynamic productData={productData} />
-    </>
-  );
+  return <HomeDynamic productData={productData} />;
 }
